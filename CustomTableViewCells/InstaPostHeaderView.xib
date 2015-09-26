@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FreightSansCmpPro-Light.otf">
+            <string>FreightSansCmpPro-Light</string>
+            <string>FreightSansCmpPro-Light</string>
+            <string>FreightSansCmpPro-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InstaPostHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6j-vf-O1N">
+                    <rect key="frame" x="76" y="31" width="86" height="23"/>
+                    <fontDescription key="fontDescription" name="FreightSansCmpPro-Light" family="FreightSansCmpPro" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vW4-Tt-hYi">
+                    <rect key="frame" x="76" y="54" width="89" height="20"/>
+                    <fontDescription key="fontDescription" name="FreightSansCmpPro-Light" family="FreightSansCmpPro" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WTQ-IB-8c7">
+                    <rect key="frame" x="8" y="14" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WTQ-IB-8c7" secondAttribute="height" multiplier="1:1" id="ObV-qy-55X"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-Tq-vgx">
+                    <rect key="frame" x="417" y="57" width="14" height="17"/>
+                    <fontDescription key="fontDescription" name="FreightSansCmpPro-Light" family="FreightSansCmpPro" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vW4-Tt-hYi" firstAttribute="leading" secondItem="WTQ-IB-8c7" secondAttribute="trailing" constant="8" id="4DL-5C-jfY"/>
+                <constraint firstItem="m6j-vf-O1N" firstAttribute="leading" secondItem="WTQ-IB-8c7" secondAttribute="trailing" constant="8" id="FOX-Ws-eHt"/>
+                <constraint firstAttribute="bottom" secondItem="fr4-Tq-vgx" secondAttribute="bottom" constant="8" id="Mlu-dp-L7o"/>
+                <constraint firstItem="WTQ-IB-8c7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="ToK-aD-RhD"/>
+                <constraint firstItem="WTQ-IB-8c7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="g4A-8q-ulr"/>
+                <constraint firstAttribute="bottom" secondItem="vW4-Tt-hYi" secondAttribute="bottom" constant="8" id="i2R-SA-BQf"/>
+                <constraint firstAttribute="bottom" secondItem="WTQ-IB-8c7" secondAttribute="bottom" constant="8" id="oFB-zV-vqf"/>
+                <constraint firstAttribute="trailing" secondItem="fr4-Tq-vgx" secondAttribute="trailing" constant="8" id="sFe-wh-SGp"/>
+                <constraint firstItem="vW4-Tt-hYi" firstAttribute="top" secondItem="m6j-vf-O1N" secondAttribute="bottom" id="vl3-ak-ybJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateStampLabel" destination="fr4-Tq-vgx" id="hNg-TT-Tb5"/>
+                <outlet property="fullNameLabel" destination="m6j-vf-O1N" id="8gQ-Ol-cUR"/>
+                <outlet property="imageView" destination="WTQ-IB-8c7" id="v3m-9x-pBs"/>
+                <outlet property="usernameLabel" destination="vW4-Tt-hYi" id="QmB-e7-QsI"/>
+            </connections>
+            <point key="canvasLocation" x="259.5" y="82"/>
+        </view>
+    </objects>
+</document>

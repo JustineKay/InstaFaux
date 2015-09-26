@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FreightSansCmpPro-Light.otf">
+            <string>FreightSansCmpPro-Light</string>
+            <string>FreightSansCmpPro-Light</string>
+            <string>FreightSansCmpPro-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InstaPostCellIdentifier" rowHeight="331" id="JzQ-Ed-srf" customClass="InstaPostTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="331"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JzQ-Ed-srf" id="82T-qN-2dF">
+                <rect key="frame" x="0.0" y="0.0" width="265" height="330"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hGg-9r-JiG">
+                        <rect key="frame" x="0.0" y="0.0" width="265" height="265"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hGg-9r-JiG" secondAttribute="height" multiplier="1:1" id="VTr-Ho-fVy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0 likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7Z-tr-XCL">
+                        <rect key="frame" x="8" y="273" width="49" height="20"/>
+                        <fontDescription key="fontDescription" name="FreightSansCmpPro-Light" family="FreightSansCmpPro" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y52-At-r3b">
+                        <rect key="frame" x="210" y="273" width="47" height="20"/>
+                        <fontDescription key="fontDescription" name="FreightSansCmpPro-Light" family="FreightSansCmpPro" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="caption" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhr-9r-PUe">
+                        <rect key="frame" x="8" y="301" width="249" height="21"/>
+                        <fontDescription key="fontDescription" name="FreightSansCmpPro-Light" family="FreightSansCmpPro" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Jhr-9r-PUe" secondAttribute="trailing" constant="8" id="1Nj-Q4-Q4p"/>
+                    <constraint firstAttribute="trailing" secondItem="y52-At-r3b" secondAttribute="trailing" constant="8" id="6jm-gy-cI8"/>
+                    <constraint firstItem="Jhr-9r-PUe" firstAttribute="leading" secondItem="82T-qN-2dF" secondAttribute="leading" constant="8" id="8sy-wY-scl"/>
+                    <constraint firstAttribute="trailing" secondItem="hGg-9r-JiG" secondAttribute="trailing" id="E2m-r6-Vct"/>
+                    <constraint firstItem="hGg-9r-JiG" firstAttribute="top" secondItem="82T-qN-2dF" secondAttribute="top" id="F6h-Qb-wZz"/>
+                    <constraint firstItem="p7Z-tr-XCL" firstAttribute="leading" secondItem="82T-qN-2dF" secondAttribute="leading" constant="8" id="Ib6-Cp-H8g"/>
+                    <constraint firstItem="p7Z-tr-XCL" firstAttribute="top" secondItem="hGg-9r-JiG" secondAttribute="bottom" constant="8" id="JYP-0J-XTl"/>
+                    <constraint firstItem="hGg-9r-JiG" firstAttribute="leading" secondItem="82T-qN-2dF" secondAttribute="leading" id="LVc-99-YWK"/>
+                    <constraint firstAttribute="bottom" secondItem="Jhr-9r-PUe" secondAttribute="bottom" constant="8" id="bCl-iS-5KM"/>
+                    <constraint firstItem="y52-At-r3b" firstAttribute="top" secondItem="hGg-9r-JiG" secondAttribute="bottom" constant="8" id="f1v-n8-nnZ"/>
+                    <constraint firstItem="Jhr-9r-PUe" firstAttribute="top" secondItem="p7Z-tr-XCL" secondAttribute="bottom" constant="8" id="gzc-fN-jsb"/>
+                    <constraint firstItem="y52-At-r3b" firstAttribute="top" secondItem="hGg-9r-JiG" secondAttribute="bottom" constant="8" id="phG-BI-NSr"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="phG-BI-NSr"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="captionLabel" destination="Jhr-9r-PUe" id="40B-iT-rYv"/>
+                <outlet property="likesLabel" destination="p7Z-tr-XCL" id="xm2-Gj-00Y"/>
+                <outlet property="tagsLabel" destination="y52-At-r3b" id="NJR-B6-OcF"/>
+                <outlet property="userMediaImageView" destination="hGg-9r-JiG" id="aNQ-ye-dlj"/>
+            </connections>
+            <point key="canvasLocation" x="63.5" y="111.5"/>
+        </tableViewCell>
+    </objects>
+</document>
